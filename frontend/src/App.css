@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* eu lucrez cu rems si de obicei imi resetez font-size la 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.appContainer {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.appTitle {
+  text-align: center;
+  font-weight: bold;
+
+  background: -webkit-linear-gradient(#fb8c00, #ffa726);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.appForm {
+  display: flex;
+}
+
+.insertFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+
+.insertForm {
+  text-align: center;
+
+  width: 50rem;
+}
+
+.formInput {
+  width: inherit;
+}
+
+.formInput:focus {
+
+  transition: all .2s;
+}
+
+.formLabel {
+  font-weight: bold;
+}
+
+.appTable {
+
+}
+
+.tableButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputError {
+  color: rgb(235, 61, 61);
+}
+
+.paginationBttns {
+  width: 100%;
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #fb8c00;
+
+  transition: all .2s;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #ffa726;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #ffa726;
+}
+
+.paginationDisabled a {
+  background-color: rgba(0,0,0, .1);
+  color: #000;
+}
