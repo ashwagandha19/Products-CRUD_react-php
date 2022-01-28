@@ -4,7 +4,7 @@ import axios from 'axios';
 export const Actions = () => {
   let [products, setProducts] = useState([]);
 
-  // productLength is used to check if the products are loaded or not
+  
   let [productLength, setProductLength] = useState(null);
 
 
@@ -30,7 +30,6 @@ export const Actions = () => {
         if (res) {  
           setProducts([
             {
-              // id: res.data.products.id,
               ...newProduct,
             },
             ...products,
@@ -70,7 +69,7 @@ export const Actions = () => {
     setProducts(products);
   };
 
-  // Updating a product.
+  // update product
   const updateProduct = (productData) => {
     axios.post("http://localhost/reactphpcrud/backend/CRUD/update.php", productData)
       .then((res) => {
